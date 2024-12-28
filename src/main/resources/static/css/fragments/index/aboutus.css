@@ -1,0 +1,124 @@
+.about-section {
+    background: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-header {
+    margin-bottom: 40px;
+}
+
+.about-header h2 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-header .intro-text {
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.about-content p {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-features {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.about-features h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-section .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-section .feature-item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-section .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .feature-item i {
+    font-size: 2em;
+    color: #ff6600;
+    margin-right: 15px;
+}
+
+.about-section .feature-item h4 {
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section .feature-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .about-header h2 {
+        font-size: 2.5em;
+    }
+
+    .about-header .intro-text {
+        font-size: 1.2em;
+    }
+
+    .about-content p,
+    .about-section .feature-item p {
+        font-size: 1em;
+    }
+
+    .about-features {
+        padding: 20px;
+    }
+
+    .about-section .features-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section .feature-item {
+        width: 100%;
+        max-width: 500px;
+    }
+}

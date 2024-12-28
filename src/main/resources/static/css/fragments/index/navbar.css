@@ -1,0 +1,124 @@
+.navbar {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Ensures the navbar takes up full width */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1200px; /* Optional: limits the width of content inside the navbar */
+    margin: 0 auto; /* Centers the content within the navbar */
+    width: 100%;
+    padding: 0 20px; /* Adds padding for some spacing */
+    height: 60px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Adds padding for larger clickable area */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    /*background-color: #003399;*/
+    color: #ffcc00; /* Change text color on hover for contrast */
+    border-radius: 5px;
+}
+
+/* Hide the menu toggle button by default */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Show the menu toggle button on mobile */
+    .menu-toggle {
+        display: block;
+        align-self: center;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0044cc;
+        padding: 10px 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 0; /* Reset margins for mobile view */
+        width: 100%;
+    }
+
+    .navbar .nav-links a {
+        padding: 15px 20px; /* Increase padding for mobile */
+        width: 100%;
+        text-align: left;
+        font-size: 1.2em; /* Increase font size when toggle is on */
+    }
+
+    .navbar .nav-links a:hover {
+        /*background-color: #003399;*/
+        color: #ffcc00; /* Change text color on hover for contrast */
+        border-radius: 0; /* Remove border-radius for full-width hover effect */
+    }
+
+    /* When menu is active, display the nav-links below the logo */
+    .navbar.active .nav-links {
+        display: flex;
+    }
+}
+
+/* Optional: Adjust padding and font size for very small screens */
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+
+    .navbar .nav-links a {
+        padding: 20px 25px;
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #0044cc;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.sidebar-logo {
+    padding: 20px;
+    text-align: center;
+    background-color: #0044cc;
+}
+
+.sidebar-logo h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+.nav-links li a i {
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Collapsed Sidebar Styles */
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar.collapsed .sidebar-logo h2,
+.sidebar.collapsed .nav-links li a span {
+    display: none;
+}
+
+.sidebar.collapsed .nav-links li a i {
+    margin-right: 0;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}

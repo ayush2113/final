@@ -1,0 +1,24 @@
+
+/*.content {*/
+/*    !*padding: 20px;*!*/
+/*}*/
+
+
+/*.home-section h1,*/
+/*.home-section p {*/
+/*    background: linear-gradient(90deg, white, white); !* Gradient colors *!*/
+/*    -webkit-background-clip: text; !* For WebKit browsers *!*/
+/*    -webkit-text-fill-color: transparent; !* For WebKit browsers *!*/
+/*    background-clip: text; !* For other browsers *!*/
+/*    color: transparent; !* Fallback color *!*/
+/*}*/
+
+/*.home-section h1 {*/
+/*    font-size: 3em;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.home-section p {*/
+/*    font-size: 1.4em;*/
+/*    margin-bottom: 30px;*/
+/*}*/

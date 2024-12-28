@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Footer</title>
+    <link rel="stylesheet" th:href="@{/css/fragments/index/footer.css}">
+</head>
+<body>
+    <!-- Footer Section -->
+    <footer th:fragment="homepagefooter">
+      <div class="footer-container">
+        <!-- Section 1: Contact Us Form -->
+        <div class="footer-section contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

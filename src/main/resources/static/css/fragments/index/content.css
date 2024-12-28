@@ -1,0 +1,92 @@
+/* Content Sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.home-section {
+    background: url("../../../img/HomePage.jpeg") no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; /* Add padding to ensure content doesn't touch the screen edges on smaller devices */
+}
+
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cc5200;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .home-section h1 {
+        font-size: 2.5em; /* Reduce font size for better readability on medium screens */
+    }
+
+    .home-section p {
+        font-size: 1.2em; /* Adjust paragraph size */
+    }
+
+    .btn-primary {
+        padding: 12px 25px; /* Adjust button padding */
+        font-size: 1.1em; /* Increase button font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .home-section h1 {
+        font-size: 2em; /* Further reduce font size for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    .home-section p {
+        font-size: 1.1em; /* Adjust paragraph size */
+        margin-bottom: 25px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 1em; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        padding: 0 10px; /* Further reduce padding for very small screens */
+    }
+
+    .home-section h1 {
+        font-size: 1.8em; /* Reduce font size */
+    }
+
+    .home-section p {
+        font-size: 1em; /* Further adjust paragraph size */
+    }
+
+    .btn-primary {
+        padding: 8px 18px; /* Reduce button padding */
+        font-size: 0.9em; /* Adjust button font size */
+    }
+}
